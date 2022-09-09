@@ -3,6 +3,8 @@
 /**
  *main -Entry point
  *
+ * printf - this outputs text in your code
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -13,10 +15,10 @@ int main(void)
 	long long int d;
 	float e;
 
-	printf("size of char: %lu byte(s)\n", (unsigned)sizeof(a));
-	printf("size of int: %lu byte(s)\n", (unsigned)sizeof(b)); 
-	printf("size of int long: %lu byte(s)\n", (unsigned long)sizeof(c))
-	printf("size of long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
-	printf("size of float: %lu byte(s)\n", (unsigned)sizeof(e));
+	printf("size of char: %lu byte(s)\n", sizeof(a));
+	printf("size of int: %lu byte(s)\n", sizeof(b)); 
+	printf("size of int long: %lu byte(s)\n", sizeof(c));
+	printf("size of long long int: %lu byte(s)\n", sizeof(d));
+	printf("size of float: %lu byte(s)\n", sizeof(e));
 	return (0);
 }
