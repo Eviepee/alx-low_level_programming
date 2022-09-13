@@ -6,23 +6,15 @@
  */
 int main(void)
 {
-
 	char alphabet;
 
-	char alphabet2;
-
-	alphabet = 'a';
-	alphabet2 = 'A';
-	while
-	(alphabet <= 'z') {
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 		putchar(alphabet);
-		alphabet++;
-	}
-	while
-	(alphabet <= 'Z') {
-		putchar(alphabet2);
-		alphabet2++;
-	}
+
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+		putchar(alphabet);
+
 	putchar('\n');
+
 	return (0);
 }
