@@ -1,31 +1,27 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/* more headers goes there */
 
+/*betty style doc for fum=nction main goes there */
 /**
- * main - print whether the number stored in the variable n is positive
- * or negative
+ * main - Entry point
  *
- *
- * Return: 0
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n < 0)
-	{
+	/*your code goes there */ 
+	if (n > 0)
 		printf("%d is possitive\n", n);
-	}
-	else if (n > 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	else
-	{
+	else if (n==0)
 		printf("%d is zero\n", n);
-	}
-	Return (0);
+	else
+		printf("%d is negative\n", n);
+	return (0);
 }
